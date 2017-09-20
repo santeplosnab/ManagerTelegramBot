@@ -7,7 +7,7 @@ namespace ManagerTelegramBot.Controllers
         // заглушка
         public string Index()
         {
-            return "It's Santeplosab Telegram Bot";
+            return "It's Santeplosab Telegram Bot test test";
         }
     }
 }
