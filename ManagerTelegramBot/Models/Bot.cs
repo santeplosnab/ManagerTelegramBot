@@ -25,7 +25,7 @@ namespace ManagerTelegramBot.Models
 
             client = new TelegramBotClient(AppSettings.Key);
 
-            var hook = string.Format(AppSettings.Url, "/api/message/update");
+            var hook = string.Format(AppSettings.Url, @"api/message/update");
             await client.SetWebhookAsync(hook);
 
             return client;

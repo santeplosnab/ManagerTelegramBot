@@ -11,14 +11,14 @@ namespace ManagerTelegramBot.Models
     {
         public override string Name => "Hello";
 
-        public override async void Execute(Message message, TelegramBotClient client)
+        public override void Execute(Message message, TelegramBotClient client)
         {
             var chatId = message.Chat.Id;
             var messageId = message.MessageId;
 
             // TODO: Bot logic -_-
 
-            await client.SendTextMessageAsync(chatId, "Hello!", replyToMessageId: messageId);
+            client.SendTextMessageAsync(chatId, "Hello!", replyToMessageId: messageId);
         }
     }
 }

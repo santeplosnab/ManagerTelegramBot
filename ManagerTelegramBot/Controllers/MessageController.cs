@@ -21,7 +21,7 @@ namespace ManagerTelegramBot.Controllers
                 if (command.Contains(message.Text))
                 {
                     command.Execute(message, client);
-                    break;
+                    return Ok();
                 }
             }
 
